@@ -1,0 +1,196 @@
+.about {
+  background: var(--color-bg);
+}
+
+.about .divider {
+  margin: var(--space-12) 0;
+}
+
+/* Intro */
+.about-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-10);
+  align-items: start;
+}
+
+.about-intro h2 {
+  line-height: 0.9;
+}
+
+.about-intro-text {
+  padding-top: var(--space-4);
+}
+
+.about-intro-text .large {
+  font-size: 1.375rem;
+  margin-bottom: var(--space-5);
+}
+
+/* Philosophy */
+.about-philosophy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-10);
+}
+
+.philosophy-block {
+  padding: var(--space-8);
+  background: var(--color-bg-elevated);
+  border-left: 2px solid var(--color-accent);
+}
+
+.philosophy-block .num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 3rem;
+  color: var(--color-accent);
+  margin-bottom: var(--space-4);
+}
+
+.philosophy-block h3 {
+  font-size: 2rem;
+  margin-bottom: var(--space-4);
+  line-height: 1;
+}
+
+/* Values */
+.about-values {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: var(--space-10);
+}
+
+.values-header h3 {
+  font-size: 3rem;
+  line-height: 0.95;
+}
+
+.values-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.value-item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: var(--space-5);
+  padding: var(--space-5) 0;
+  border-bottom: 1px solid var(--color-gray-500);
+}
+
+.value-item:last-child {
+  border-bottom: none;
+}
+
+.value-num {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-accent);
+}
+
+.value-item h4 {
+  font-size: 1.125rem;
+  margin-bottom: var(--space-1);
+}
+
+.value-item p {
+  font-size: 0.9375rem;
+  color: var(--color-gray-300);
+}
+
+/* Vision & Mission */
+.about-vm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-10);
+}
+
+.vm-block {
+  padding: var(--space-8);
+  background: var(--color-bg-card);
+}
+
+.vm-text {
+  font-size: 1.25rem;
+  color: var(--color-gray-100);
+  line-height: 1.7;
+}
+
+/* Team */
+.about-team {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: var(--space-10);
+}
+
+.team-header h3 {
+  font-size: 3rem;
+  line-height: 0.95;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  background: var(--color-bg-elevated);
+  transition: var(--transition);
+}
+
+.team-member:hover {
+  background: var(--color-bg-card);
+}
+
+.member-avatar {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent);
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.member-info h4 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.member-info p {
+  font-size: 0.75rem;
+  color: var(--color-gray-300);
+}
+
+@media (max-width: 1024px) {
+  .about-intro-grid,
+  .about-philosophy,
+  .about-vm {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-values,
+  .about-team {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+  
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,9 @@
+/* App-level styles */
+main {
+  position: relative;
+}
+
+/* Smooth scroll offset for fixed header */
+section[id] {
+  scroll-margin-top: var(--header-height);
+}
