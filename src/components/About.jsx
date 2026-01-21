@@ -17,8 +17,8 @@ const About = () => {
     { name: 'Col. Paul U. Omeruo (RTD)', role: 'Chairman', image: null },
     { name: 'Tony Uzoma Emmanuel', role: 'Principal Partner, Business Dev', image: tonyImage },
     { name: 'Doyin Oluwole', role: 'Principal Partner, Creative', image: doyinImage },
-    { name: 'Erika Emmanuel', role: 'Director, Client Service', image: erikaImage },
-    { name: 'Andrew', role: 'Project Manager', image: andrewImage },
+    { name: 'Erika Emmanuel', role: 'Non Executive Director', image: erikaImage },
+    { name: 'Andrew Akinro', role: 'Project Manager', image: andrewImage },
   ]
 
   return (
