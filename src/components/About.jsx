@@ -81,7 +81,7 @@ const About = () => {
         <div className="about-intro reveal">
           <span className="section-label">About</span>
           <div className="about-intro-grid">
-            <h2>growth and <span className="market-black">market</span> <br /> <span className="accent">adoption</span></h2>
+            <h2>growth <br /> and <span className="market-black">market</span> <br /> <span className="accent">adoption</span></h2>
             <div className="about-intro-text">
               <p className="large">
                 We are a growth and market-adoption agency helping brands scale in emerging markets through culture, experience, and technology with return on investment (ROI) at the core.
