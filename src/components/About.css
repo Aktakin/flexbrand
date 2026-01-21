@@ -21,6 +21,10 @@
   color: var(--color-gray-600);
 }
 
+.about-intro .market-black {
+  color: var(--color-gray-600);
+}
+
 .about-intro-text {
   padding-top: var(--space-4);
 }
