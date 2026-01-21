@@ -1,4 +1,5 @@
 import './Footer.css'
+import flexLogo from '../images/flex.png'
 
 const Footer = () => {
   const year = new Date().getFullYear()
@@ -9,8 +10,7 @@ const Footer = () => {
         <div className="footer-top">
           <div className="footer-brand">
             <a href="#" className="logo">
-              <span className="logo-icon">F</span>
-              <span className="logo-text">Flexbrand</span>
+              <img src={flexLogo} alt="Flexbrand" className="logo-img" />
             </a>
             <p>Turning brand moments into real experiences since 2011.</p>
           </div>

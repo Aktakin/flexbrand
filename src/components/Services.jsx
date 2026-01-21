@@ -44,6 +44,14 @@ const Services = () => {
       desc: 'We help brands win where buying decisions happen by combining shopper engagement with smart digital triggers.',
       items: ['In-store demos', 'Retail visibility', 'POS experiential setups', 'Data capture microsites', 'Sampling + feedback loops'],
       outputs: ['Trial', 'Preference', 'Sales lift']
+    },
+    {
+      num: '06',
+      title: 'Electric Vehicle Growth and Adoption Services',
+      full: 'Electric Vehicle Growth and Adoption Services',
+      desc: 'Comprehensive services to drive EV market entry, adoption, and growth in emerging markets.',
+      items: ['EV Market Entry & Adoption Strategy', 'EV Education, Trust & Behavior Change', 'Experience-Led EV Launches & Trial Programs', 'EV Ecosystem, Partnerships & Stakeholder Engagement', 'EV Demand Generation & Conversion'],
+      outputs: ['Market Entry', 'Adoption', 'Trust Building', 'Demand Generation']
     }
   ]
 
