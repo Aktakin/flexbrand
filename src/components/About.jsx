@@ -225,29 +225,31 @@ const About = () => {
         <div className="divider" />
 
         {/* Leadership */}
-        <div className="about-team reveal">
-          <div className="team-header">
-            <span className="section-label">Leadership</span>
-            <h3>The<br />Team</h3>
-          </div>
-          <div className="team-grid">
-            {team.map((t, i) => (
-              <div key={i} className="team-member">
-                <div className="member-avatar">
-                  {t.image ? (
-                    <img src={t.image} alt={t.name} className="member-photo" />
-                  ) : (
-                    <span className="member-initials">
-                      {t.name.split(' ').map(n => n[0]).slice(0, 2).join('')}
-                    </span>
-                  )}
+        <div className="about-team-wrapper">
+          <div className="about-team reveal">
+            <div className="team-header">
+              <span className="section-label">Leadership</span>
+              <h3>The<br />Team</h3>
+            </div>
+            <div className="team-grid">
+              {team.map((t, i) => (
+                <div key={i} className="team-member">
+                  <div className="member-avatar">
+                    {t.image ? (
+                      <img src={t.image} alt={t.name} className="member-photo" />
+                    ) : (
+                      <span className="member-initials">
+                        {t.name.split(' ').map(n => n[0]).slice(0, 2).join('')}
+                      </span>
+                    )}
+                  </div>
+                  <div className="member-info">
+                    <h4>{t.name}</h4>
+                    <p>{t.role}</p>
+                  </div>
                 </div>
-                <div className="member-info">
-                  <h4>{t.name}</h4>
-                  <p>{t.role}</p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
 
