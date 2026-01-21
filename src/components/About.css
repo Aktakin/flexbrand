@@ -1,9 +1,11 @@
 .about {
-  background: var(--color-bg);
+  background: #ffffff;
+  color: var(--color-gray-600);
 }
 
 .about .divider {
   margin: var(--space-12) 0;
+  background: var(--color-gray-400);
 }
 
 /* Intro */
@@ -16,10 +18,15 @@
 
 .about-intro h2 {
   line-height: 0.9;
+  color: var(--color-gray-600);
 }
 
 .about-intro-text {
   padding-top: var(--space-4);
+}
+
+.about-intro-text p {
+  color: var(--color-gray-400);
 }
 
 .about-intro-text .large {
@@ -36,7 +43,7 @@
 
 .philosophy-block {
   padding: var(--space-8);
-  background: var(--color-bg-elevated);
+  background: #f5f5f5;
   border-left: 2px solid var(--color-accent);
 }
 
@@ -52,6 +59,11 @@
   font-size: 2rem;
   margin-bottom: var(--space-4);
   line-height: 1;
+  color: var(--color-gray-600);
+}
+
+.philosophy-block p {
+  color: var(--color-gray-400);
 }
 
 /* Values */
@@ -64,6 +76,7 @@
 .values-header h3 {
   font-size: 3rem;
   line-height: 0.95;
+  color: var(--color-gray-600);
 }
 
 .values-list {
@@ -76,7 +89,7 @@
   grid-template-columns: 60px 1fr;
   gap: var(--space-5);
   padding: var(--space-5) 0;
-  border-bottom: 1px solid var(--color-gray-500);
+  border-bottom: 1px solid var(--color-gray-400);
 }
 
 .value-item:last-child {
@@ -92,11 +105,12 @@
 .value-item h4 {
   font-size: 1.125rem;
   margin-bottom: var(--space-1);
+  color: var(--color-gray-600);
 }
 
 .value-item p {
   font-size: 0.9375rem;
-  color: var(--color-gray-300);
+  color: var(--color-gray-400);
 }
 
 /* Vision & Mission */
@@ -108,12 +122,12 @@
 
 .vm-block {
   padding: var(--space-8);
-  background: var(--color-bg-card);
+  background: #f5f5f5;
 }
 
 .vm-text {
   font-size: 1.25rem;
-  color: var(--color-gray-100);
+  color: var(--color-gray-600);
   line-height: 1.7;
 }
 
@@ -127,6 +141,7 @@
 .team-header h3 {
   font-size: 3rem;
   line-height: 0.95;
+  color: var(--color-gray-600);
 }
 
 .team-grid {
@@ -138,37 +153,55 @@
 .team-member {
   display: flex;
   align-items: center;
-  gap: var(--space-4);
-  padding: var(--space-4);
-  background: var(--color-bg-elevated);
+  gap: var(--space-5);
+  padding: var(--space-6);
+  background: #f5f5f5;
   transition: var(--transition);
 }
 
 .team-member:hover {
-  background: var(--color-bg-card);
+  background: #e8e8e8;
 }
 
 .member-avatar {
-  width: 56px;
-  height: 56px;
+  width: 80px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--color-accent);
   font-family: var(--font-display);
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.member-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: var(--color-white);
 }
 
 .member-info h4 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
+  color: var(--color-gray-600);
 }
 
 .member-info p {
-  font-size: 0.75rem;
-  color: var(--color-gray-300);
+  font-size: 0.875rem;
+  color: var(--color-gray-400);
 }
 
 @media (max-width: 1024px) {

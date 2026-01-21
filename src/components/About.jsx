@@ -1,4 +1,8 @@
 import './About.css'
+import doyinImage from '../images/Doyin.jpeg'
+import erikaImage from '../images/Erika.jpeg'
+import andrewImage from '../images/Andrew.jpeg'
+import tonyImage from '../images/Tony.jpeg'
 
 const About = () => {
   const values = [
@@ -10,11 +14,11 @@ const About = () => {
   ]
 
   const team = [
-    { name: 'Col. Paul U. Omeruo (RTD)', role: 'Chairman' },
-    { name: 'Tony Uzoma Emmanuel', role: 'Principal Partner, Business Dev' },
-    { name: 'Doyin Oluwole', role: 'Principal Partner, Creative' },
-    { name: 'Erika Emmanuel', role: 'Director, Client Service' },
-    { name: 'Akintunde Akinro', role: 'Project Manager' },
+    { name: 'Col. Paul U. Omeruo (RTD)', role: 'Chairman', image: null },
+    { name: 'Tony Uzoma Emmanuel', role: 'Principal Partner, Business Dev', image: tonyImage },
+    { name: 'Doyin Oluwole', role: 'Principal Partner, Creative', image: doyinImage },
+    { name: 'Erika Emmanuel', role: 'Director, Client Service', image: erikaImage },
+    { name: 'Andrew', role: 'Project Manager', image: andrewImage },
   ]
 
   return (
@@ -119,7 +123,13 @@ const About = () => {
             {team.map((t, i) => (
               <div key={i} className="team-member">
                 <div className="member-avatar">
-                  {t.name.split(' ').map(n => n[0]).slice(0, 2).join('')}
+                  {t.image ? (
+                    <img src={t.image} alt={t.name} className="member-photo" />
+                  ) : (
+                    <span className="member-initials">
+                      {t.name.split(' ').map(n => n[0]).slice(0, 2).join('')}
+                    </span>
+                  )}
                 </div>
                 <div className="member-info">
                   <h4>{t.name}</h4>

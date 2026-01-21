@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './Header.css'
+import flexLogo from '../images/flex.png'
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false)
@@ -22,8 +23,7 @@ const Header = () => {
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className="header-inner">
         <a href="#" className="logo">
-          <span className="logo-icon">F</span>
-          <span className="logo-text">Flexbrand</span>
+          <img src={flexLogo} alt="Flexbrand" className="logo-img" />
         </a>
 
         <nav className={`nav ${menuOpen ? 'open' : ''}`}>
