@@ -33,7 +33,7 @@ const Footer = () => {
             <div className="footer-col">
               <h4>Contact</h4>
               <a href="mailto:info@flexbrandcomms.com">info@flexbrandcomms.com</a>
-              <a href="tel:+2348089883268">+234 0808 988 3268</a>
+              <a href="tel:+2348089883268">+234 808 988 3268</a>
               <span>Lagos, Nigeria</span>
             </div>
           </div>
