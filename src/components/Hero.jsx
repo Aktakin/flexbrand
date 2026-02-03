@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="hero-overlay" />
       <div className="hero-inner">
         <div className="hero-content">
-          <p className="hero-eyebrow">Experiential Marketing Agency</p>
+          <p className="hero-eyebrow">growth<br />and market<br />adoption</p>
           
           <h1 className="hero-title">
             Brand<br />

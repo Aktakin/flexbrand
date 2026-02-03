@@ -34,7 +34,7 @@ const Contact = () => {
               </div>
               <div className="contact-item">
                 <span className="item-label">Phone</span>
-                <a href="tel:+2348089883268">0808 988 3268</a>
+                <a href="tel:+2348089883268">+234 0808 988 3268</a>
               </div>
             </div>
           </div>
