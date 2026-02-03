@@ -4,6 +4,7 @@ import doyinImage from '../images/Doyin.jpeg'
 import erikaImage from '../images/Erika.jpeg'
 import andrewImage from '../images/Andrew.jpeg'
 import tonyImage from '../images/Tony.jpeg'
+import colPaulImage from '../images/ColPaul.jpeg'
 
 const About = () => {
   const [activeService, setActiveService] = useState(0)
@@ -16,7 +17,7 @@ const About = () => {
   ]
 
   const team = [
-    { name: 'Col. Paul U. Omeruo (RTD)', role: 'Chairman', image: null },
+    { name: 'Col. Paul U. Omeruo (RTD)', role: 'Chairman', image: colPaulImage },
     { name: 'Tony Uzoma Emmanuel', role: 'Principal Partner, Business Dev', image: tonyImage },
     { name: 'Doyin Oluwole', role: 'Principal Partner, Creative', image: doyinImage },
     { name: 'Erika Emmanuel', role: 'Non Executive Director', image: erikaImage },
