@@ -17,7 +17,7 @@ const About = () => {
   ]
 
   const team = [
-    { name: 'Col. Paul U. Omeruo (RTD)', role: 'Chairman', image: colPaulImage },
+    { name: 'Col P.U.N Omeruo (Rtd)', role: 'Chairman', image: colPaulImage },
     { name: 'Tony Uzoma Emmanuel', role: 'Principal Partner, Business Dev', image: tonyImage },
     { name: 'Doyin Oluwole', role: 'Principal Partner, Creative', image: doyinImage },
     { name: 'Erika Emmanuel', role: 'Non Executive Director', image: erikaImage },
